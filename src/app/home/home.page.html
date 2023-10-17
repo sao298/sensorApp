@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      App Sensor Puerta
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-toggle [enableOnOffLabels]="true" (ionChange)="onToggleChange($event)" checked>
+      Habilitar seguridad
+    </ion-toggle> <br><br>
+    <ion-label>Permite las notificaciones de esta app en tu dispositivo para avistare cuando la puerta esté abierta</ion-label>
+    <ion-img src="https://images.samsung.com/is/image/samsung/assets/co/support/hhp/a30/Bloqueo39.png?$ORIGIN_PNG$" alt="Notifications img"></ion-img>
+  </div>
+</ion-content>
